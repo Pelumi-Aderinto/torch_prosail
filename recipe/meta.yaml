@@ -1,0 +1,32 @@
+package:
+  name: prosail
+  version: 2.0.4
+  
+source:
+  git_tag: 2.0.4
+  git_url: http://osr-cesbio.ups-tlse.fr/gitlab_cesbio/Jordi/prosailpytorch.git
+
+requirements:
+  build:
+    - python ==3.6
+    - setuptools
+    - numpy
+    - scipy
+    - pytorch
+    - pytest
+
+  run:
+    - python ==3.6
+    - numpy
+    - scipy
+    - pytorch
+    - pytest
+
+test:
+  imports:
+    - prosail
+
+about:
+  home: http://osr-cesbio.ups-tlse.fr/gitlab_cesbio/Jordi/prosailpytorch.git
+  license: GPLv3
+  summary: "The PROSPECT and SAIL radiative transfer models"
